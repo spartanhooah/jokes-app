@@ -3,9 +3,9 @@ package net.frey.jokesapp.service
 import guru.springframework.norris.chuck.ChuckNorrisQuotes
 import spock.lang.Specification
 
-class JokeServiceTest extends Specification {
+class ChuckNorrisJokeServiceTest extends Specification {
     def quoteGenerator = new ChuckNorrisQuotes()
-    def jokeService = new JokeService(quoteGenerator)
+    def jokeService = new ChuckNorrisJokeService(quoteGenerator)
 
 
     def "Gets a joke from the jar"() {
